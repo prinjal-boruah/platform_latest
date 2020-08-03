@@ -1,0 +1,38 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="container-fluid" style="margin-top: 45vh;">
+  <div class="row">
+    <div class="col-2">
+       
+    </div>
+      <div class="col-3">
+          <a class="btn btn-outline-info" style="display: block; margin-left: auto; margin-right: auto; width: 300px;" href="/projects">Go To Projects</a>       
+      </div>
+
+      <div class="col-2">
+       
+      </div>
+
+      <div class="col-3">
+        <a class="btn btn-outline-info" style="display: block; margin: auto; width: 300px;" href="/create_project">Create Organization/Projects</a>       
+    </div>
+    <div class="col-2">
+       
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
+{% block javascripts %}
+
+	<script src="/static/assets/js/demo.js"></script>
+
+{% endblock javascripts %}

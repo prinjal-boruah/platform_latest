@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Survey {% endblock title %}
+
+{% block stylesheets %}
+{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="card-header">
+    <h4 class="card-title">Survey Plots</h4>
+</div>
+<div class="">
+
+    <img src="data:image/png;base64,{{ data }}" alt="" style="width: 500;height: 500;">
+
+</div>
+
+
+{% endblock content %}
+
+{% block javascripts %}
+
+<script src="/static/assets/js/demo.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/handsontable-pro@3.0.0/dist/handsontable.full.min.js"></script>
+
+{% endblock javascripts %}
